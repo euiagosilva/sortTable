@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Teste Script sortTable</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/sortTable.js"></script> 
+</head>
+
+<body>
+	<table id="myTable">
+		<thead>
+		<tr>
+			<td data-type="number">
+				<a href="#">Número</a>
+			</td>
+			<td>
+				<a href="#">Nome</a>
+			</td>
+			<td data-type="date">
+				<a href="#">Data</a>
+			</td>
+			<td data-type="money">
+				<a href="#">Valor (R$)</a>
+			</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>44444</td>
+			<td>Casa</td>
+			<td>01/08/2015</td>
+			<td>R$ 210,50</td>
+		</tr>
+		<tr>
+			<td>11111</td>
+			<td>Bola</td>
+			<td>09/01/2015</td>
+			<td>R$ 572,00</td>
+		</tr>
+		<tr>
+			<td>55555</td>
+			<td>Tecnologia</td>
+			 <td>02/12/2015</td>
+			<td>R$ 917,81</td>
+		</tr>
+		<tr>
+			<td>77777</td>
+			<td>Iago</td>
+			<td>04/10/2015</td>
+			<td>R$ 1.100,00</td>
+		</tr>
+		</tbody>
+	</table>
+	
+</body>
+
+<script>
+    jQuery(document).ready(function() {
+        var table = new ScriptOrderTable();
+        table.queryTableColumns('#myTable', 'thead td a');
+    });
+</script>
+
+</html>
