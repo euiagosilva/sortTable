@@ -13,4 +13,4 @@ Em seu arquivo ``HTML`` faça a chamada do ``sortTable.js`` da seguinte forma:
         table.queryTableColumns('#myTable', 'thead td a');
     });
 
-* Veja no arquivo ``sortTableExample.html`` um exemplo de como utilizar o script.
+Veja no arquivo ``sortTableExample.html`` um exemplo de como utilizar o script.
