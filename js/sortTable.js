@@ -68,8 +68,7 @@ var ScriptOrderTable = function() {
         columnsTitle = table.find(queryElement);
         columnsTitle.off('click').on('click', function(e) {
             e.preventDefault();
-            var col = $(this).index(),
-                attr = null;
+            var col = $(this).parent().index(), attr = null;
             if ($(this).attr('order') == 'asc') {
                 attr = 'desc';
             } else {
