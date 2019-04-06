@@ -1,17 +1,14 @@
-# sortTable
-> sortTable é um simples script [`JS`](https://developer.mozilla.org/en-US/docs/Web/JavaScript) para ordenar dados de uma tabela `HTML` de forma Ascendente e Descendente. Você pode utilizá-lo para ordenar nomes, números, datas, e moeda. 
+# Sort Table
+> sortTable is a simple [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript) script to sort data from an `HTML` table in an Ascending and Descending way. You can use it to sort names, numbers, dates, and currency. 
 
-# Como Utilizar
-Adicione o <code>sortTable.js</code> ao `<head>` do seu arquivo `HTML`. É necessário que seu projeto esteja utilizando o [jQuery](https://jquery.com).
+# How to use
 
-Em seu arquivo `HTML` faça a chamada do `sortTable.js` da seguinte forma:
-
-    ```
-    jQuery(document).ready(function() {
-        var table = new ScriptOrderTable();
-        table.queryTableColumns('#myTable', 'thead td a');
-    });
-    ```
-
-Veja no arquivo `sortTableExample.html` um exemplo de como utilizar o script.
+Add the <code> sortTable.js </ code> to the `<head>` of your `HTML` file. It's necessary that your project is using [jQuery] (https://jquery.com). In its `HTML` file it makes a call to` sortTable.js` as follows:
+```javascript
+jQuery(document).ready(function() {
+    var table = new ScriptOrderTable();
+    table.queryTableColumns('#myTable', 'thead td a');
+});
+```
+See the [`sortTableExample.html`](https://github.com/euiagosilva/sortTable/blob/master/sortTableExemple.html) file for an example of how to use the script.
 
